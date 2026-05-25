@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Attendance Predictor</title>
+</head>
+<body>
+
+<h1>Attendance Predictor System</h1>
+
+<form action="/predict" method="POST">
+
+Study Hours:
+<input type="number" name="study"><br><br>
+
+Sleep Hours:
+<input type="number" name="sleep"><br><br>
+
+Distance:
+<input type="number" name="distance"><br><br>
+
+Previous Attendance:
+<input type="number" name="attendance"><br><br>
+
+Participation:
+<select name="participation">
+<option value="1">Yes</option>
+<option value="0">No</option>
+</select><br><br>
+
+Health Issue:
+<select name="health">
+<option value="1">Yes</option>
+<option value="0">No</option>
+</select><br><br>
+
+<button type="submit">Predict</button>
+
+</form>
+
+</body>
+</html>
